@@ -1,0 +1,125 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    background: url('../img/batman.svg') center center no-repeat;
+    background-size: cover;
+}
+
+.split.right {
+    background: url('../img/joker.svg') center center no-repeat;
+    background-size: cover;
+    right: 0;
+}
+
+.split.left:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 20, 0.2);
+}
+
+
+.split.right:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 125, 100, 0.2);
+}
+
+.split.left,
+.split.right,
+.split.right:before,
+.split.left:before {
+    transition: 0.5s all ease-in-out;
+    z-index: 0;
+}
+
+.hover-left .left {
+    width: 80%;
+}
+
+.hover-left .right {
+    width: 20%;
+}
+
+.hover-left .right:before {
+    z-index: 2;
+}
+
+.hover-right .right {
+    width: 80%;
+}
+
+.hover-right .left {
+    width: 20%;
+}
+
+.hover-right .left:before {
+    z-index: 2;
+}
+
+.button {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 86%;
+  height: 2.5rem;
+  padding-top: 1.3rem;
+  width: 15rem;
+  text-align: center;
+  color: #fff;
+  border: #fff solid 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  transform: translateX(-50%);
+}
+
+h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+
+@media(max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .button {
+    width: 12rem;
+  }
+}
+
+@media(max-height: 700px) {
+  .button {
+    top: 62%;
+  }
+}
