@@ -3,6 +3,7 @@
 ## Basic
 [Bookmark](http://www.elpsycongroo.cc/WebProjects/Basic/bookmark/index.html)
 
+[Slider](http://www.elpsycongroo.cc/WebProjects/Basic/Slider/index.html)
 ## 	Web Design Effects Series
 [Split Screen Slider](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Split%20Screen%20Slider/index.html)
 
