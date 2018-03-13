@@ -6,6 +6,8 @@
 [Slider](http://www.elpsycongroo.cc/WebProjects/Basic/Slider/index.html)
 
 [To-do List](http://htmlpreview.github.io/?https://github.com/Observer-L/WebProjects/blob/master/Basic/To-do%20List/index.html)
+
+[Zoom](http://www.elpsycongroo.cc/WebProjects/Basic/Zoom/index.html)
 ## 	Web Design Effects Series
 [Split Screen Slider](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Split%20Screen%20Slider/index.html)
 
