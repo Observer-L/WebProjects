@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section h1 {
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  background-image: url('../img/beforeafter2.jpg');
+  background-size: 100% auto;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  cursor: none;
+}
+
+.wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.before {
+  visibility: hidden;
+}
+
+.wrapper .after {
+  background-image: url('../img/beforeafter1.jpg');
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-size: auto 100%;
+}
+
+.wrapper .after img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.wrapper .handle {
+  width: 28px;
+  height: 12px;
+  display: block;
+  background: url(../img/handle.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  margin: -6px 0 0 -14px;
+}
+
+.wrapper .handle:before {
+  content: '';
+  background: #ffffff;
+  width: 2px;
+  height: 500px;
+  left: 13px;
+  bottom: 5px;
+  display: block;
+  position: absolute;
+}
+
+.wrapper .handle:after {
+  content: '';
+  background: #ffffff;
+  width: 2px;
+  height: 500px;
+  left: 13px;
+  top: 5px;
+  display: block;
+  position: absolute;
+}
