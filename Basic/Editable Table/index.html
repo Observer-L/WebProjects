@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Editable Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <table>
+      <tbody>
+        <th>信息</th>
+        <th>操作</th>
+        <th><span class="btn add">+</span></th>
+        <tr class="data">
+          <td>
+            <input type="text" value="first">
+          </td>
+          <td>
+            <span class="btn up">↑</span>
+            <span class="btn down">↓</span>
+            <span class="btn delete">×</span>
+          </td>
+        </tr>
+        <tr class="data">
+          <td>
+            <input type="text" value="second">
+          </td>
+          <td>
+            <span class="btn up">↑</span>
+            <span class="btn down">↓</span>
+            <span class="btn delete">×</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="export">
+      <button>导出数据</button>
+      <p></p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="main.js">
+  </script>
+</body>
+
+</html>
