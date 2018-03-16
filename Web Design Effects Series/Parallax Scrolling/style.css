@@ -1,0 +1,165 @@
+body {
+  background: #1c92d2;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f2fcfe, #1c92d2);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 4600px;
+}
+
+/* foreground (balloons/landscape)*/
+
+#parallax-bg-1 {
+  position: fixed;
+  width: 1200px;
+  top: 0;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 1;
+}
+
+/* background middle layer*/
+
+#parallax-bg-2 {
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+  position: fixed;
+  width: 1200px;
+  top: 0;
+  left: 50%;
+  margin-left: -600px;
+  z-index: 2;
+  text-align: right;
+}
+
+/* background layer */
+
+#parallax-bg-3 {
+  position: fixed;
+  width: 960px;
+  top: 0;
+  left: 50%;
+  margin-left: -470px;
+  z-index: 3;
+}
+
+/* foreground */
+
+#parallax-bg-3 div {
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+}
+
+#bg-3-1 {
+  background: url('./img/spm.png');
+  width: 529px;
+  height: 757px;
+  top: 30px;
+  right: 100px;
+}
+
+#bg-3-2 {
+  background: url('./img/bm.png');
+  width: 400px;
+  height: 757px;
+  top: 2000px;
+  left: 0;
+}
+
+#bg-3-3 {
+  background: url('./img/fl.png');
+  width: 400px;
+  height: 757px;
+  top: 3000px;
+  left: 0;
+}
+
+/* middle layer clouds */
+
+#parallax-bg-2 div {
+  /* background: url('http://schulzmarcel.de/x/drafts/parallax/img/cloud-lg1.png'); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  display: block;
+  width: 488px;
+  height: 138px;
+  overflow: hidden;
+}
+
+#bg-2-1 {
+  color: #fff;
+  background: url('./img/spm_logo.png');
+  top: 400px;
+  left: 400px;
+}
+
+#bg-2-2 {
+  color: #000;
+  background: url('./img/bm_logo.png');
+  top: 1300px;
+  left: 450px;
+}
+
+#bg-2-3 {
+  color: #ee7800;
+  background: url('./img/fl_logo.png');
+  top: 2000px;
+  left: 500px;
+}
+
+#bg-2-4 {
+  background: url('./img/f1.png');
+  top: 1900px;
+  left: 200px;
+}
+
+#bg-2-6 {
+  background: url('./img/cloud-sm1.png');
+  top: 500px;
+  right: 0;
+}
+
+/*background layer clouds */
+
+#parallax-bg-1 div {
+  background-repeat: no-repeat;
+  position: absolute;
+  display: block;
+  width: 488px;
+  height: 138px;
+  overflow: hidden;
+}
+
+#bg-1-1 {
+  background: url('./img/cloud-sm1.png');
+  top: 200px;
+  right: 450px;
+}
+
+#bg-1-2 {
+  background: url('./img/cloud-lg2.png');
+  top: 420px;
+  left: 0px;
+}
+
+#bg-1-3 {
+  background: url('./img/cloud-sm1.png');
+  top: 850px;
+  right: -290px;
+}
+
+#bg-1-4 {
+  background: url('./img/cloud-sm1.png');
+  top: 1350px;
+  left: 200px;
+}
+
+#bg-1-5 {
+  background: url('./img/cloud-lg2.png');
+  top: 1200px;
+  left: -200px;
+}
