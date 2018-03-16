@@ -18,3 +18,5 @@
 [Coming Soon Landing Page With Countdown](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Coming%20Soon%20Landing%20Page%20With%20Countdown/index.html)
 
 [Split Screen Slider (before & after)](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Split%20Screen%20Slider%20(before%20%26%20after)/index.html)
+
+[Parallax Scrolling](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Parallax%20Scrolling/index.html)
