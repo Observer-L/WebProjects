@@ -10,6 +10,8 @@
 [Zoom](http://www.elpsycongroo.cc/WebProjects/Basic/Zoom/index.html)
 
 [Editable Table](http://htmlpreview.github.io/?https://github.com/Observer-L/WebProjects/blob/master/Basic/Editable%20Table/index.html)
+
+[Shopping Cart Dropdown](http://www.elpsycongroo.cc/WebProjects/Basic/Shopping%20Cart%20Dropdown/index.html)
 ## 	Web Design Effects Series
 [Split Screen Slider](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Split%20Screen%20Slider/index.html)
 
