@@ -1,0 +1,31 @@
+body {
+  height: 2000px;
+}
+
+h1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+}
+
+#backToTop {
+  background: #000;
+  color: #fff;
+  opacity: 0.5;
+  position: fixed;
+  padding: 20px;
+  border-radius: 100%;
+  font-weight: bold;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+  display: none;
+}
+
+#backToTop:hover {
+  background: #aaa;
+  color: #000;
+}
