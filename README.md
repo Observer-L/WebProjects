@@ -14,6 +14,8 @@
 [Shopping Cart Dropdown](http://www.elpsycongroo.cc/WebProjects/Basic/Shopping%20Cart%20Dropdown/index.html)
 
 [Back to Top Button](http://www.elpsycongroo.cc/WebProjects/Basic/Back%20to%20Top%20Button/index.html)
+
+[Scroll Fixed Menu](http://www.elpsycongroo.cc/WebProjects/Basic/Scroll%20fixed%20menu/index.html)
 ## 	Web Design Effects Series
 [Split Screen Slider](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Split%20Screen%20Slider/index.html)
 
