@@ -17,6 +17,9 @@
 
 [Scroll Fixed Menu](http://www.elpsycongroo.cc/WebProjects/Basic/Scroll%20fixed%20menu/index.html)
 
+## CSS
+[Social Media Accordion With CSS3 Transitions](http://www.elpsycongroo.cc/WebProjects/CSS/Social%20Media%20Accordion%20With%20CSS3%20Transitions/index.html)
+
 ## Ajax
 [A Simple AJAX Example with Plain Javascript](http://www.elpsycongroo.cc/WebProjects/AJAX/A%20Simple%20AJAX%20Example/index.html)
 ## 	Web Design Effects Series
