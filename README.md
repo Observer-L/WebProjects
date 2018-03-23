@@ -17,6 +17,8 @@
 
 [Scroll Fixed Menu](http://www.elpsycongroo.cc/WebProjects/Basic/Scroll%20fixed%20menu/index.html)
 
+[3D Slideshow](http://www.elpsycongroo.cc/WebProjects/Basic/3D%20Slideshow/index.html)
+
 ## CSS
 [Social Media Accordion With CSS3 Transitions](http://www.elpsycongroo.cc/WebProjects/CSS/Social%20Media%20Accordion%20With%20CSS3%20Transitions/index.html)
 
