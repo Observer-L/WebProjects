@@ -24,6 +24,9 @@
 
 ## Ajax
 [A Simple AJAX Example with Plain Javascript](http://www.elpsycongroo.cc/WebProjects/AJAX/A%20Simple%20AJAX%20Example/index.html)
+
+## Layout
+[Masonry Layout - plain JS](http://www.elpsycongroo.cc/WebProjects/Layout/Masonry%20Layout/Plain%20JavaScript/index.html)
 ## 	Web Design Effects Series
 [Split Screen Slider](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Split%20Screen%20Slider/index.html)
 
