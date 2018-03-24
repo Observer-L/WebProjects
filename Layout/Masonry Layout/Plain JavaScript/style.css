@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  position: relative;
+}
+
+.box {
+  float: left;
+  padding: 10px 0 0 10px;
+}
+
+.pic {
+  font-size: 0;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+  border: #fff 10px solid;
+}
+
+.pic:hover {
+  cursor: zoom-in;
+  background-color: #eee;
+  border: #eee 10px solid;
+}
+
+.pic img {
+  border-radius: 6px;
+  width: 236px;
+}
