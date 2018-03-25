@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(246, 248, 248);
+  font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.promos {
+  position: relative;
+  width: 800px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.promo {
+  transition: all 0.1s ease-in-out;
+  float: left;
+  width: 260px;
+  background: #0F1012;
+  color: #fff;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.price-tag {
+  margin: 16px 0;
+  font-size: 2rem;
+  display: inline-block;
+  background: #292B2E;
+  height: 70px;
+  width: 100%;
+  line-height: 70px;
+}
+
+.price-tag::before {
+  content: '$';
+}
+
+.features {
+  padding: 0 20px 20px 20px;
+  color: #999999;
+}
+
+button {
+  background: #292b2e;
+  position: relative;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 24px;
+  margin: 10px 0 20px 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.features ul {
+  list-style-type: none;
+}
+
+.scale {
+  box-shadow: 0 1px 20px #bbb;
+  transform: scale(1.2);
+}
+
+.scale button {
+  background: #64AAA4;
+}
+
+.scale .price {
+  color: #64AAA4;
+}
+
+.scale .price-tag {
+  color: #64AAA4;
+  font-size: 2.5rem;
+}
