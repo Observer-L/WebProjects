@@ -39,3 +39,5 @@
 [Split Screen Slider (before & after)](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Split%20Screen%20Slider%20(before%20%26%20after)/index.html)
 
 [Parallax Scrolling](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Parallax%20Scrolling/index.html)
+
+[Vertical Timeline](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Vertical%20Timeline/index.html)
