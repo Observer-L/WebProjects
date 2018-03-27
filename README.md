@@ -41,3 +41,6 @@
 [Parallax Scrolling](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Parallax%20Scrolling/index.html)
 
 [Vertical Timeline](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Vertical%20Timeline/index.html)
+
+## Web Parts Imitation
+[Twitter Navbar](http://www.elpsycongroo.cc/WebProjects/Web%20Parts/Nav%20Bar/Twitter/index.html)
