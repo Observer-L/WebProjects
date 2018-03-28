@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Masonry Layout - Plain javascript</title>
+  <title>Twitter Navbar</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
@@ -35,7 +35,36 @@
             </div>
           </li>
           <li>
-            <div class="accout"><a href="#"><img src="img\default_profile_normal.png" alt=""></a></div>
+            <div class="accout">
+              <a href="#"><img src="img\default_profile_normal.png" alt=""></a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li class="user-info">
+                    <a href="#">
+                      <h2><b>观测者</b></h2>
+                      <p class="name">@Observer-L</p>
+                    </a>
+
+                  </li>
+                  <li class="dropdown-divider"></li>
+                  <li class="profile"><a href="#">Profile</a></li>
+                  <li class="lists"><a href="#">Lists</a></li>
+                  <li class="moments"><a href="#">Moments</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li class="promote-mode"><a href="#">Promote Mode</a></li>
+                  <li class="ads"><a href="#">Twitter Ads</a></li>
+                  <li class="analytics"><a href="#">Analytics</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a href="#">Settings and privacy</a></li>
+                  <li><a href="#">Help Center</a></li>
+                  <li><a href="#">Keyboard shortcuts</a></li>
+                  <li><a href="#">Log out</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li class="night-mode"><a href="#">Night mode</a></li>
+                </ul>
+              </div>
+
+            </div>
           </li>
           <li><button class="btn tweet" type="submit">Tweet</button></li>
 

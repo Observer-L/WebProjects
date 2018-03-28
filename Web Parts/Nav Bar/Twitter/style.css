@@ -178,3 +178,97 @@ a {
   width: 32px;
   border-radius: 50%;
 }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 50px;
+  left: auto;
+  right: calc(50% - 85px);
+  background: #fff;
+  color: #14171a;
+  padding: 10px 0 10px 0;
+  border-radius: 6px;
+}
+
+.dropdown-menu ul li {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  text-align: left;
+}
+
+.dropdown-menu::before {
+  left: 170px;
+  top: -9px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #fff transparent;
+  position: absolute;
+}
+
+.dropdown-menu ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 25px 10px 20px;
+}
+
+.dropdown-menu ul li:not(:first-child):not(.dropdown-divider):hover {
+  background: #1DA1F2;
+  color: #fff;
+}
+
+.dropdown-menu ul li.dropdown-divider {
+  padding: 1px 0 0 0;
+  margin: 5px 1px 6px;
+  border-bottom: 1px solid #e6ecf0;
+}
+
+.user-info .name {
+  color: #657786;
+}
+
+.dropdown-menu li:not(:first-child):not(.dropdown-divider) a:before, .dropdown-menu li:not(:first-child):not(.dropdown-divider) a:after {
+  font-family: FontAwesome;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.dropdown-menu .profile a::before {
+  content: "\f007";
+}
+
+.dropdown-menu .lists a::before {
+  content: "\f0ca";
+}
+
+.dropdown-menu .moments a::before {
+  content: "\f0e7";
+}
+
+.dropdown-menu .promote-mode a::before {
+  content: "\f0ad";
+}
+
+.dropdown-menu .ads a::before {
+  content: "\f170";
+}
+
+.dropdown-menu .analytics a::before {
+  content: "\f080";
+}
+
+.dropdown-menu .night-mode a::after {
+  content: "\f186";
+  position: absolute;
+  right: 0;
+  padding-right: 5px;
+}
+
+.show {
+  display: block;
+}
