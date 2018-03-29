@@ -177,6 +177,14 @@ a {
 .nav-extras ul li:nth-child(2) img {
   width: 32px;
   border-radius: 50%;
+  border: 0 #1DA1F2 solid;
+  padding: 0;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-extras ul li:nth-child(2) img:hover {
+  padding: 1px;
+  border: 2px #1DA1F2 solid;
 }
 
 .dropdown-menu {
@@ -270,5 +278,27 @@ a {
 }
 
 .show {
-  display: block !important;
+  display: block;
+}
+
+.hover-text {
+  left: 45%;
+  top: 50px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #000;
+  color: #fff;
+  position: absolute;
+}
+
+.hover-text:before {
+  content: '';
+  top: -8px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #000 transparent;
+  position: absolute;
 }
