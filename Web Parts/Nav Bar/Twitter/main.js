@@ -10,9 +10,20 @@
 
 (function showDropDownMenu() {
   let accout = document.querySelector('.accout');
-  let dropDownMenu = accout.querySelector('.dropdown-menu');
+  let dropDownMenu = document.querySelector('.dropdown-menu');
 
-  accout.addEventListener('click', (e)=>{
+  accout.addEventListener('click', (e) => {
+    // 待优化
+    if (e.target == dropDownMenu || e.target.parentNode.parentNode == dropDownMenu || e.target.parentNode.parentNode.parentNode == dropDownMenu ||
+      e.target.parentNode.parentNode.parentNode.parentNode == dropDownMenu || e.target.parentNode.parentNode.parentNode.parentNode.parentNode == dropDownMenu) {
+      e.stopPropagation();
+      return;
+    };
     dropDownMenu.classList.toggle('show');
-  })
-}())
+    e.stopPropagation();
+  });
+
+  document.addEventListener('click', (e) => {
+    dropDownMenu.classList.remove('show');
+  });
+}());
