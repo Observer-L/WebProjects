@@ -1,5 +1,5 @@
 # WebProjects
-
+##### Recommend using Chrome browser for better compatibility
 ## Basic
 [Bookmark](http://www.elpsycongroo.cc/WebProjects/Basic/bookmark/index.html)
 
@@ -42,5 +42,5 @@
 
 [Vertical Timeline](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Vertical%20Timeline/index.html)
 
-## Web Parts Imitation
+## Mimicking WebPages
 [Twitter Navbar](http://www.elpsycongroo.cc/WebProjects/Web%20Parts/Nav%20Bar/Twitter/index.html)
