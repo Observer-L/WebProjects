@@ -88,9 +88,10 @@ body {
   font-weight: bold;
   text-align: center;
   line-height: 20px;
+  margin-right: 10px;
 }
 
-.btn:hover {
+.tweet:hover {
   background: #1DA1F2;
 }
 
@@ -334,6 +335,7 @@ a {
   overflow-y: auto;
   padding: 8px 12px;
   background-color: #1DA1F2;
+  border-radius: 8px;
   background: rgba(29, 161, 242, 0.1);
 }
 
@@ -395,18 +397,47 @@ a {
   right: 0;
   padding: 15px;
   background: none;
-
 }
 
-#filter {
-  background: rgba(0,0,0,0.5);
-display: none;
-position: fixed;
-overflow: auto;
-overflow-x: hidden;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 5000;
+.filter {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  overflow: auto;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5000;
+}
+
+.confirm-discard {
+  top: 50vh;
+  left: 40%;
+  z-index: 5003;
+  width: 500px;
+  height: 160px;
+}
+
+.confirm-discard>.modal-body {
+  background: #fff;
+  min-height: 60px;
+  padding: 12px;
+  font-size: 1rem;
+  line-height: 2rem;
+  border-bottom: solid 1px rgba(29, 161, 242, 0.25);
+}
+
+.modal-footer {
+  width: 100%;
+  text-align: right;
+  padding: 8px;
+  height: 50px;
+}
+
+.cancel {
+  background-color: #fff;
+  border: 1px solid #66757f;
+  color: #66757f;
 }
