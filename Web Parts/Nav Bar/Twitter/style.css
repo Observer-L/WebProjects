@@ -14,6 +14,7 @@ body {
   background: #fff;
   position: fixed;
   top: 0;
+  z-index: 5000;
   border-bottom: 1px #aaa solid;
   box-shadow: 0 1px 1px #ccc;
 }
@@ -307,11 +308,12 @@ a {
   position: absolute;
   top: 30vh;
   width: 600px;
-  height: 200px;
+  height: auto;
   left: 36%;
   color: #14171a;
   background: #fff;
   border-radius: 6px;
+  position: fixed;
 }
 
 .content {
@@ -440,4 +442,42 @@ a {
   background-color: #fff;
   border: 1px solid #66757f;
   color: #66757f;
+}
+
+/* Media query */
+
+@media (max-width: 1200px) {
+  .tab-text {
+    display: none;
+  }
+  .logo {
+    left: 36%;
+  }
+}
+
+@media (max-width: 900px) {
+  .logo {
+    left: 30%;
+  }
+  .search-bar form {
+    width: 60%;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  top: 80px;
+  padding: 0 16px;
+}
+
+section .tweets {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
 }

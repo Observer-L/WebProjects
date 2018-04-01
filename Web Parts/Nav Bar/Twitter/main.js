@@ -68,6 +68,7 @@ accout.addEventListener('mouseover', hoverText, false);
 
   tweet_btn.addEventListener('click', (e) => {
     e.stopPropagation();
+    document.body.style['overflow-y'] = 'hidden';
     if (!document.getElementsByClassName('tweet-frame')[0]) {
       let tweetFrame = document.createElement('div');
       tweetFrame.className = 'tweet-frame';
@@ -79,6 +80,9 @@ accout.addEventListener('mouseover', hoverText, false);
       <div id="editor" contentEditable="true" data-placeholder="What’s happening?"></div>
       </div>
       <button class="btn close"><i class="fas fa-times"></i></button>
+      <div class="modal-footer">
+      <button class="btn SendTweetsButton disabled">Tweet</button>
+      </div>
       </div>`;
       content.appendChild(tweetFrame);
       filter.style.display = 'block';
@@ -91,13 +95,35 @@ accout.addEventListener('mouseover', hoverText, false);
         } else {
           content.removeChild(document.getElementsByClassName('tweet-frame')[0]);
           filter.style.display = 'none';
+          document.body.style['overflow-y'] = 'visible';
         }
       })
 
 
+      let editor = document.getElementById('editor');
+      let sendTweetsBtn = document.querySelector('.SendTweetsButton');
+      editor.addEventListener('DOMSubtreeModified', (e) => {
+        console.log(1);
+        if (editor.innerText == '') {
+          sendTweetsBtn.classList.add('disabled');
+        } else {
+          sendTweetsBtn.classList.remove('disabled');
+        }
+      })
 
+      sendTweetsBtn.addEventListener('click', (e) => {
+        if (editor.innerText != '') {
+          let tweet = document.createElement('div');
+          tweet.className = 'tweets';
+          tweet.innerText = editor.innerText;
+          content.appendChild(tweet);
+          content.removeChild(tweetFrame);
+          filter.style.display = 'none';
+          document.body.style['overflow-y'] = 'visible';
+        }
+      })
     }
-  })
+  });
 
   // 与前一种点击页面其他地方隐藏div的实现方法不同，这里利用div后面的遮罩层，给遮罩层绑定事件实现
   filter.addEventListener('click', (e) => {
@@ -108,6 +134,7 @@ accout.addEventListener('mouseover', hoverText, false);
       } else {
         content.removeChild(document.getElementsByClassName('tweet-frame')[0]);
         filter.style.display = 'none';
+        document.body.style['overflow-y'] = 'visible';
       }
     }
   })
@@ -147,6 +174,7 @@ accout.addEventListener('mouseover', hoverText, false);
       filter.style.display = 'none';
       filter.style.background = '';
       filter.style['z-index'] = '';
+      document.body.style['overflow-y'] = 'visible';
     })
 
     let closeBtn = document.querySelector('.confirm-discard .close');
