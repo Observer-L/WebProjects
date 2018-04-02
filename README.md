@@ -30,4 +30,5 @@
 [Vertical Timeline](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Vertical%20Timeline/index.html)  
 
 ## Mimicking WebPages
-[Twitter Navbar](http://www.elpsycongroo.cc/WebProjects/Web%20Parts/Nav%20Bar/Twitter/index.html)
+[Twitter Navbar](http://www.elpsycongroo.cc/WebProjects/Web%20Parts/Nav%20Bar/Twitter/index.html)  
+[Instagram](http://www.elpsycongroo.cc/WebProjects/Web%20Parts/Instagram/index.html)
