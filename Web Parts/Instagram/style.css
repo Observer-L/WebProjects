@@ -15,12 +15,14 @@ body {
   position: fixed;
   display: flex;
   top: 0;
+  height: 77px;
   width: 100%;
   background: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, .0975);
   align-items: center;
   -webkit-flex-direction: column;
   flex-direction: column;
+  transition: height 0.3s ease-in-out;
 }
 
 #navbar-inner {
@@ -43,6 +45,8 @@ body {
 
 #searchbar {
   flex: 0 1 auto;
+  top: 0;
+  transition: top 0.3s ease-in-out;
 }
 
 #accout {
@@ -59,6 +63,8 @@ body {
 
 #title {
   display: inline-block;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }
 
 #logo #title::before {
@@ -122,6 +128,18 @@ a:link, a:active, svg {
   display: flex;
 }
 
+.mask-hide {
+  background: #fff !important;
+  width: 0 !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.zoom-hide {
+  left: 6px !important;
+  position: absolute !important;
+}
+
 #accout {
   align-items: center;
   justify-content: flex-end;
@@ -143,10 +161,10 @@ a:link, a:active, svg {
   user-select: none;
 }
 
-.close-search {
-  color: #C7C7C7;
-  position: relative;
+#close {
+  position: absolute;
+  right: 6px;
   top: 3px;
-  right: 20px;
   cursor: pointer;
+  color: #C7C7C7;
 }
