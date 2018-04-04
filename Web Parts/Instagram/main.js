@@ -19,9 +19,14 @@ searchBar.addEventListener('click', e => {
     mask.classList.remove('mask-hide');
     zoom.classList.remove('zoom-hide');
     placeholder.style.display = '';
-
     if (searchInput.value != '') {
-      placeholder.innerText = searchInput.value;
+      if (placeholder.offsetWidth > 120) {
+        let text = searchInput.value;
+        placeholder.innerText = text.slice(0, 11) + '...';
+      } else {
+        placeholder.innerText = searchInput.value;
+      }
+
     } else {
       placeholder.innerText = '搜索';
     }
@@ -30,14 +35,22 @@ searchBar.addEventListener('click', e => {
   });
 
   document.addEventListener('click', e => {
-    mask.classList.remove('mask-hide');
-    zoom.classList.remove('zoom-hide');
-    placeholder.style.display = '';
+
     if (searchInput.value != '') {
-      placeholder.innerText = searchInput.value;
+      if (placeholder.offsetWidth > 120) {
+        let text = searchInput.value;
+        placeholder.innerText = text.slice(0, 11) + '...';
+      } else {
+        placeholder.innerText = searchInput.value;
+      }
+
     } else {
       placeholder.innerText = '搜索';
     }
+    placeholder.style.display = '';
+    mask.classList.remove('mask-hide');
+    zoom.classList.remove('zoom-hide');
+
   });
 })
 

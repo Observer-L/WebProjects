@@ -159,11 +159,14 @@ a:link, a:active, svg {
 #placeholder {
   margin-left: 6px;
   user-select: none;
+  height: 20px;
+  overflow: hidden;
+  display: inline-flex;
 }
 
 #close {
   position: absolute;
-  right: 6px;
+  right: 12px;
   top: 3px;
   cursor: pointer;
   color: #C7C7C7;
