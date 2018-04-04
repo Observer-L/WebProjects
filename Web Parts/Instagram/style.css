@@ -160,6 +160,7 @@ a:link, a:active, svg {
   margin-left: 6px;
   user-select: none;
   height: 20px;
+  max-width: 162px;
   overflow: hidden;
   display: inline-flex;
 }
