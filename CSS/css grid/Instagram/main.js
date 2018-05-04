@@ -37,7 +37,7 @@ searchBar.addEventListener('click', e => {
   document.addEventListener('click', e => {
 
     if (searchInput.value != '') {
-      if (placeholder.offsetWidth > 120) {
+      if (placeholder.offsetWidth > 100) {
         let text = searchInput.value;
         placeholder.innerText = text.slice(0, 11) + '...';
       } else {
@@ -59,11 +59,9 @@ let navbar = document.getElementById('navbar');
 window.addEventListener('scroll', e => {
   if (window.scrollY > 400) {
     navbar.style.height = '52px';
-    title.style.opacity = '0';
-    searchBar.style.top = '-15px';
+    title.classList.add('faded');
   } else {
     navbar.style.height = '';
-    title.style.opacity = '';
-    searchBar.style.top = '';
+    title.classList.remove('faded');
   }
 })
