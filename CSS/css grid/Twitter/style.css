@@ -20,29 +20,24 @@ body {
 }
 
 #topbar .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   position: relative;
-  text-align: center;
-  height: 46px;
   margin: 0 auto;
   width: 80%;
 }
 
-.container>div {
-  float: left;
-}
-
 /* tabs */
 
-.tabs ul {
-  height: 46px;
+.nav.tabs>ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .tabs ul li {
   color: #677680;
   cursor: pointer;
   list-style-type: none;
-  float: left;
-  height: 100%;
   padding: 10px;
   border-bottom: 0 #1DA1F2 solid;
   transition: border-bottom 0.2s ease-in-out;
@@ -125,13 +120,11 @@ body {
 }
 
 .logo {
-  width: 24px;
-  height: 21px;
+  display: grid;
+  justify-self: center;
   color: #1DA1F2;
-  margin-top: 10px;
+  align-content: center;
   transform: scale(1.2);
-  position: absolute;
-  left: 50%;
 }
 
 a:link {
@@ -163,17 +156,20 @@ a {
 }
 
 .nav-extras {
-  height: 100%;
-  position: absolute;
-  right: 0;
+  display: grid;
+  align-self: center;
+}
+
+.nav-extras>ul {
+  grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-self: end;
 }
 
 .nav-extras ul li {
   list-style-type: none;
-  float: left;
-  margin-right: 20px;
   height: 100%;
-  margin-top: 8px;
 }
 
 .nav-extras ul li:nth-child(2) img {
@@ -187,13 +183,17 @@ a {
   border: 2px #1DA1F2 solid;
 }
 
+.accout {
+  position: relative;
+  display: grid;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
   width: 200px;
   top: 50px;
-  left: auto;
-  right: calc(50% - 85px);
+  right: -3px;
   background: #fff;
   color: #14171a;
   padding: 10px 0 10px 0;
@@ -306,10 +306,10 @@ a {
 .tweet-frame {
   z-index: 5001;
   position: absolute;
-  top: 30vh;
+  top: 50%;
   width: 600px;
-  height: auto;
-  left: 36%;
+  transform: translate(-50%, -50%);
+  left: 50%;
   color: #14171a;
   background: #fff;
   border-radius: 6px;
@@ -351,6 +351,7 @@ a {
   height: 32px;
   width: 32px;
   border-radius: 100px;
+  cursor: pointer;
 }
 
 #tweet-box .avatar {
@@ -418,8 +419,8 @@ a {
 }
 
 .confirm-discard {
-  top: 50vh;
-  left: 40%;
+  top: 40%;
+  left: 50%;
   z-index: 5003;
   width: 500px;
   height: 160px;
@@ -466,65 +467,47 @@ section .tweets {
   margin-bottom: 5px;
 }
 
-/* Media query */
+@media (max-width:1200px) {
+  #topbar .container {
+    width: 90%;
+  }
+}
 
-@media (max-width: 1200px) {
+@media (max-width:1000px) {
   .tab-text {
     display: none;
   }
-  .logo {
-    left: 40%;
+  .tabs ul {
+    text-align: center;
+  }
+  .tabs ul li:before {
+    padding-right: 0;
   }
   .search-bar form {
-    width: 130px;
-  }
-  .nav-extras ul li {
-    margin-right: 6px;
+    width: 180px;
   }
 }
 
-@media (max-width:760px) {
+@media (max-width:768px) {
   #topbar .container {
+    margin: 0;
     width: 100%;
   }
+  .search-bar form {
+    width: 125px;
+  }
+  .nav-extras>ul {
+    grid-gap: 6px;
+  }
+  .
 }
 
-@media (max-width:530px) {
-  .tabs ul li {
-    float: none;
-    background: rgba(255, 255, 255, 0.5);
+@media (max-width:500px) {
+  .nav-extras>ul>li:nth-child(1) {
+    display: none;
   }
-  section {
-    padding: 0 60px;
-  }
-  .logo {
-    left: 18%;
-  }
-  .nav-extras {
-    transform: scale(0.8);
-    position: absolute;
-    right: -30px;
+  .nav-extras>ul {
+    justify-content: end;
+    grid-template-columns: auto auto;
   }
 }
-
-/* @media (max-width: 500px) {
-  .search-bar {
-  display: none;
-  }
-  .logo {
-    left: 50%;
-  }
-  }
-
-  @media (max-width:360px) {
-    .logo {
-      display: none;
-    }
-    .accout {
-      display: none;
-    }
-  }
-
-  @@media (max-width:280px) {
-
-  } */
