@@ -14,10 +14,11 @@
 
 ## CSS
 [Social Media Accordion With CSS3 Transitions](http://www.elpsycongroo.cc/WebProjects/CSS/Social%20Media%20Accordion%20With%20CSS3%20Transitions/index.html)  
-#### CSS Grid
+#### Recreating famous website with CSS Grid Layout
 [GridBiz Grid CSS Website Theme](http://www.elpsycongroo.cc/WebProjects/CSS/css%20grid/GridBiz%20Grid%20CSS%20Website%20Theme/index.html)  
 [CodePen](http://www.elpsycongroo.cc/WebProjects/CSS/css%20grid/CodePen/index.html)  
-[Instagram](http://www.elpsycongroo.cc/WebProjects/CSS/css%20grid/Instagram/index.html)
+[Instagram](http://www.elpsycongroo.cc/WebProjects/CSS/css%20grid/Instagram/index.html)  
+[Twitter](http://www.elpsycongroo.cc/WebProjects/CSS/css%20grid/Twitter/index.html)
 ## Ajax
 [A Simple AJAX Example with Plain Javascript](http://www.elpsycongroo.cc/WebProjects/AJAX/A%20Simple%20AJAX%20Example/index.html)
 
@@ -32,6 +33,3 @@
 [Parallax Scrolling With HTML & CSS & JS](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Parallax%20Scrolling/index.html)  
 [Basic Parallax Website With HTML & CSS](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Basic%20Parallax%20Website%20With%20HTML%20%26%20CSS/index.html)   
 [Vertical Timeline](http://www.elpsycongroo.cc/WebProjects/Web%20Design%20Effects%20Series/Vertical%20Timeline/index.html)  
-
-## Mimicking WebPages
-[Twitter Navbar](http://www.elpsycongroo.cc/WebProjects/Web%20Parts/Nav%20Bar/Twitter/index.html)  
