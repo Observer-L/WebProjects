@@ -282,7 +282,8 @@ a {
 }
 
 .hover-text {
-  left: 45%;
+  white-space: nowrap;
+  left: -70px;
   top: 50px;
   padding: 10px;
   border-radius: 6px;
