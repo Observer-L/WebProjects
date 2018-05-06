@@ -12,44 +12,278 @@
 
 <body>
   <div class="container">
-    <header>
-      <div class="header-inner">
-        <a href="#"><img src="logo.png" class="logo"></a>
-        <nav class="header-nav">
-          <a href="#">首页</a>
-          <a href="#">发现</a>
-          <a href="#">话题</a>
-        </nav>
-        <div class="SearchBar">
-          <div class="SearchBar-toolWrapper">
-            <form action="" class="SearchBar-tool">
-              <div class="Popover">
-                <div class="SearchBar-input">
-                  <input class="input" placeholder="搜索你感兴趣的内容…">
-                  <div class="Input-after">
-                    <button class="btn  btn-plain SearchBar-searchIcon"><i class="fas fa-search"></i></button>
+    <div class="p">
+      <header>
+        <div class="header-inner">
+          <a href="#"><img src="logo.png" class="logo"></a>
+          <nav class="header-nav">
+            <a href="#">首页</a>
+            <a href="#">发现</a>
+            <a href="#">话题</a>
+          </nav>
+          <div class="SearchBar">
+            <div class="SearchBar-toolWrapper">
+              <form action="" class="SearchBar-tool">
+                <div class="Popover">
+                  <div class="SearchBar-input">
+                    <input class="input" placeholder="搜索你感兴趣的内容…">
+                    <div class="Input-after">
+                      <button class="btn  btn-plain SearchBar-searchIcon"><i class="fas fa-search"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <button class="btn btn-blue SearchBar-askButton">提问</button>
+          </div>
+          <div class="header-userInfo">
+            <div class="header-notifications">
+              <button class="btn btn-plain"><i class="fas fa-bell"></i></button>
+            </div>
+            <div class="header-messages">
+              <button class="btn btn-plain"><i class="fas fa-comments"></i></button>
+            </div>
+            <div class="header-profile">
+              <button class="btn btn-plain"><i class="fas fa-user-secret"></i></button>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <main class="app-main">
+      <div class="Topstory">
+        <div class="Topstory-container">
+          <div class="Topstory-mainColumn">
+            <div class="Card">
+              <div class="TopstoryHeader">
+                <div class="TopstoryHeader-nav">
+                  <button class="btn btn-plain TopstoryHeader-navItem"><i class="far fa-question-circle"></i>提问</button>
+                  <button class="btn btn-plain TopstoryHeader-navItem"><i class="far fa-file-alt"></i>回答</button>
+                  <button class="btn btn-plain TopstoryHeader-navItem"><i class="far fa-edit"></i>写文章</button>
+                  <button class="btn btn-plain TopstoryHeader-navItem"><i class="far fa-lightbulb"></i>写想法</button>
+                </div>
+                <a href="#" class="TopstoryHeader-rightItem">草稿</a>
+              </div>
+            </div>
+            <div class="TopstoryMain">
+              <div class="TopstoryItems">
+                <div class="Card TopstoryItem">
+                  <button class="btn btn-plain TopstoryItem-rightButton">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <div class="Feed">
+                    <div class="FeedSource">
+                      <div class="FeedSource-firstline">
+                        <span class="UserLink"><a href="#">Observer</a></span> 回答了问题
+                        <span> · </span>54 分钟前
+                      </div>
+                      <div class="ContentItem AnswerItem">
+                        <h2 class="ContentItem-title">如何拯救世界？</h2>
+                        <div class="RichContent">
+                          <div class="RichContent-inner">
+                            <span class="RichText">lorem20Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, beatae.</span>
+                            <button class="btn btn-plain ContentItem-more">阅读全文<i class="fas fa-chevron-down"></i></button>
+                          </div>
+                        </div>
+                        <div class="ContentItem-actions">
+                          <span>
+                            <button class="btn VoteButton VoteButton-up"><i class="fas fa-sort-up"></i>6</button>
+                            <button class="btn VoteButton VoteButton-down"><i class="fas fa-sort-down"></i></button>
+                          </span>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-comment"></i>添加评论</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-paper-plane"></i>分享</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-star"></i>收藏</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-heart"></i>感谢</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Card TopstoryItem">
+                  <button class="btn btn-plain TopstoryItem-rightButton">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <div class="Feed">
+                    <div class="FeedSource">
+                      <div class="FeedSource-firstline">
+                        <span class="UserLink"><a href="#">Observer</a></span> 回答了问题
+                        <span> · </span>54 分钟前
+                      </div>
+                      <div class="ContentItem AnswerItem">
+                        <h2 class="ContentItem-title">如何毁灭世界？</h2>
+                        <div class="RichContent">
+                          <div class="RichContent-inner">
+                            <span class="RichText">lorem20Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, beatae.</span>
+                            <button class="btn btn-plain ContentItem-more">阅读全文<i class="fas fa-chevron-down"></i></button>
+                          </div>
+                        </div>
+                        <div class="ContentItem-actions">
+                          <span>
+                            <button class="btn VoteButton VoteButton-up"><i class="fas fa-sort-up"></i>666</button>
+                            <button class="btn VoteButton VoteButton-down"><i class="fas fa-sort-down"></i></button>
+                          </span>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-comment"></i>999 条评论</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-paper-plane"></i>分享</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-star"></i>收藏</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-heart"></i>感谢</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Card TopstoryItem">
+                  <button class="btn btn-plain TopstoryItem-rightButton">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <div class="Feed">
+                    <div class="FeedSource">
+                      <div class="FeedSource-firstline">
+                        <span class="UserLink"><a href="#">Observer</a></span> 回答了问题
+                        <span> · </span>54 分钟前
+                      </div>
+                      <div class="ContentItem AnswerItem">
+                        <h2 class="ContentItem-title">如何毁灭世界？</h2>
+                        <div class="RichContent">
+                          <div class="RichContent-inner">
+                            <span class="RichText">lorem20Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, beatae.</span>
+                            <button class="btn btn-plain ContentItem-more">阅读全文<i class="fas fa-chevron-down"></i></button>
+                          </div>
+                        </div>
+                        <div class="ContentItem-actions">
+                          <span>
+                            <button class="btn VoteButton VoteButton-up"><i class="fas fa-sort-up"></i>666</button>
+                            <button class="btn VoteButton VoteButton-down"><i class="fas fa-sort-down"></i></button>
+                          </span>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-comment"></i>999 条评论</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-paper-plane"></i>分享</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-star"></i>收藏</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-heart"></i>感谢</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="Card TopstoryItem">
+                  <button class="btn btn-plain TopstoryItem-rightButton">
+                    <i class="fas fa-times"></i>
+                  </button>
+                  <div class="Feed">
+                    <div class="FeedSource">
+                      <div class="FeedSource-firstline">
+                        <span class="UserLink"><a href="#">Observer</a></span> 回答了问题
+                        <span> · </span>54 分钟前
+                      </div>
+                      <div class="ContentItem AnswerItem">
+                        <h2 class="ContentItem-title">如何毁灭世界？</h2>
+                        <div class="RichContent">
+                          <div class="RichContent-inner">
+                            <span class="RichText">lorem20Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, iure.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, beatae.</span>
+                            <button class="btn btn-plain ContentItem-more">阅读全文<i class="fas fa-chevron-down"></i></button>
+                          </div>
+                        </div>
+                        <div class="ContentItem-actions">
+                          <span>
+                            <button class="btn VoteButton VoteButton-up"><i class="fas fa-sort-up"></i>666</button>
+                            <button class="btn VoteButton VoteButton-down"><i class="fas fa-sort-down"></i></button>
+                          </span>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-comment"></i>999 条评论</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-paper-plane"></i>分享</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-star"></i>收藏</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-heart"></i>感谢</button>
+                          <button class="btn ContentItem-action btn-plain"><i class="fas fa-ellipsis-h"></i></button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
-          <button class="btn btn-blue SearchBar-askButton">提问</button>
-        </div>
-        <div class="header-userInfo">
-          <div class="header-notifications">
-            <button class="btn btn-plain"><i class="fas fa-bell"></i></button>
-          </div>
-          <div class="header-messages">
-            <button class="btn btn-plain"><i class="fas fa-comments"></i></button>
-          </div>
-          <div class="header-profile">
-            <button class="btn btn-plain"><i class="fas fa-user-secret"></i></button>
+          <div class="GlobalSideBar">
+            <div class="Sticky">
+              <div class="Card">
+                <ul class="GlobalSideBar-categoryList">
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="#" class="btn btn-plain">
+                      <span class="GlobalSideBar-categoryIcon"><i class="fas fa-bolt"></i></span>
+                      <span class="GlobalSideBar-categoryLabel">Live</span>
+                    </a>
+                  </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="#" class="btn btn-plain">
+                      <span class="GlobalSideBar-categoryIcon"><i class="fas fa-book"></i></span>
+                      <span class="GlobalSideBar-categoryLabel">书店</span>
+                    </a>
+                  </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="#" class="btn btn-plain">
+                      <span class="GlobalSideBar-categoryIcon"><i class="far fa-dot-circle"></i></span>
+                      <span class="GlobalSideBar-categoryLabel">圆桌</span>
+                    </a>
+                  </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="#" class="btn btn-plain">
+                      <span class="GlobalSideBar-categoryIcon"><i class="fas fa-pencil-alt"></i></span>
+                      <span class="GlobalSideBar-categoryLabel">专栏</span>
+                    </a>
+                  </li>
+                  <li class="GlobalSideBar-categoryItem">
+                    <a href="#" class="btn btn-plain">
+                      <span class="GlobalSideBar-categoryIcon"><i class="fas fa-hand-holding-usd"></i></span>
+                      <span class="GlobalSideBar-categoryLabel">付费咨询</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="Card">
+                <ul class="GlobalSideBar-navList">
+                  <li class="GlobalSideBar-navItem"><a href="#" class="btn btn-plain GlobalSideBar-navLink"><i class="fas fa-star"></i><span class="GlobalSideBar-navText">我的收藏</span><span class="GlobalSideBar-navNumber">45</span></a></li>
+                  <li class="GlobalSideBar-navItem"><a href="#" class="btn btn-plain GlobalSideBar-navLink"><i class="fas fa-question"></i><span class="GlobalSideBar-navText">我关注的问题</span><span class="GlobalSideBar-navNumber">6</span></a></li>
+                  <li class="GlobalSideBar-navItem"><a href="#" class="btn btn-plain GlobalSideBar-navLink"><i class="fas fa-user-plus"></i><span class="GlobalSideBar-navText">我的邀请</span><span class="GlobalSideBar-navNumber">65</span></a></a>
+                  </li>
+                  <li class="GlobalSideBar-navItem"><a href="#" class="btn btn-plain GlobalSideBar-navLink"><i class="fas fa-building"></i><span class="GlobalSideBar-navText">社区服务中心</span></a></li>
+                  <li class="GlobalSideBar-navItem"><a href="#" class="btn btn-plain GlobalSideBar-navLink"><i class="fas fa-copyright"></i><span class="GlobalSideBar-navText">版权服务中心</span></a></li>
+                  <li class="GlobalSideBar-navItem"><a href="#" class="btn btn-plain GlobalSideBar-navLink"><i class="fas fa-pen-square"></i><span class="GlobalSideBar-navText">公共编辑动态</span></a></li>
+                </ul>
+              </div>
+              <footer class="Footer">
+                <a class="Footer-item" href="#">刘看山</a>
+                <span class="Footer-dot"></span>
+                <a class="Footer-item" href="#">知乎指南</a>
+                <span class="Footer-dot"></span>
+                <a class="Footer-item" href="#">知乎协议</a>
+                <span class="Footer-dot"></span>
+                <a class="Footer-item" href="#">隐私政策</a>
+                <br>
+                <a class="Footer-item" href="#">应用</a>
+                <span class="Footer-dot"></span>
+                <a class="Footer-item" href="#">工作</a>
+                <span class="Footer-dot"></span>
+                <a class="Footer-item" href="#">申请开通知乎机构号</a>
+                <br>
+                <a class="Footer-item" href="#">侵权举报</a>
+                <span class="Footer-dot"></span>
+                <a class="Footer-item" href="#">网上有害信息举报专区</a>
+                <br>
+                <span class="Footer-item">违法和不良信息举报：010-82716601</span>
+                <br>
+                <a class="Footer-item" href="#">儿童色情信息举报专区</a>
+                <br>
+                <a class="Footer-item" href="#">联系我们</a>
+                <span> © 2018 知乎</span>
+              </footer>
+            </div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="main">x</div>
-    <div class="CornerButtons">x</div>
+    </main>
+    <div class="CornerButtons">
+    <div class="CornerAnimayedFlex"><button class="btn btn-plain CornerButton"><i class="far fa-envelope"></i></button></div>
+    <div class="CornerAnimayedFlex"><button class="btn btn-plain CornerButton"><i class="fas fa-arrow-up"></i></button></div>
+    </div>
   </div>
   <script type="text/javascript" src="main.js">
   </script>
