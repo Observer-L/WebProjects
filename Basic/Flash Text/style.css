@@ -1,0 +1,74 @@
+.content {
+  margin-top: 100px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+}
+
+.desc {
+  line-height: 1.6;
+  font-size: 30px;
+}
+
+.flash {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  position: relative;
+}
+
+span.flash span {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  color: #fff;
+  background: tomato;
+  line-height: 50px;
+  transition: top 0.2s;
+  transform: translateZ(0);
+}
+
+/* 占位 */
+
+.flash>i {
+  visibility: hidden;
+}
+
+span.flash:hover span.designer {
+  transform: perspective(100px) rotateX(20deg);
+  top: -96px;
+}
+
+span.flash:hover span.teacher {
+  transform: perspective(100px) rotateX(-20deg);
+  top: -44px;
+}
+
+span.flash:hover span.developer {
+  transform: perspective(100px) rotateX(20deg);
+  top: 0;
+}
+
+span.flash:hover span.speaker {
+  transform: perspective(100px) rotateX(-20deg);
+  top: 52px;
+}
+
+span.flash:hover span.entrepreneur {
+  transform: perspective(200px) rotateX(40deg);
+  top: 92px;
+}
+
+a, a:visited {
+  color: #252527;
+  text-decoration: none;
+  border-bottom: 2px solid tomato;
+}
